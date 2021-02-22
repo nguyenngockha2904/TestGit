@@ -1,0 +1,497 @@
+/* GLOBAL */
+*
+{
+    box-sizing: border-box;
+}
+html,body
+{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+
+:root
+{
+    --icon:#ff9800;
+    --facebook:#337ab7;
+}
+
+.padding__section80
+{
+    margin:auto;
+    width: 80%;
+}
+.clear
+{
+    clear:both;
+}
+/* GLOBAL */
+
+/* HEADER */
+/* INFO */
+.header__frame
+{
+    background: #b06010;
+    color: white;
+    margin-top: 40px;
+}
+.header__info
+{
+    padding: 10px 0;
+}
+
+.header__info .fa
+{
+    padding-right:  10px;
+    font-size: 0.8rem;
+}
+
+.header__info span
+{
+    padding-right:  15px;
+}
+.header__info a
+{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+}
+.header__info a:hover
+{
+    color: black;
+}
+
+.header__icon i
+{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+    border: none;
+    color:white;
+    transition: 0.5s;
+    margin-right: 5px;
+}
+
+.header__icon .fa-facebook-f
+{
+    background-color: #204b87;
+}
+
+.header__icon .fa-twitter
+{
+    background-color: #1da1f2
+}
+
+.header__icon .fa-dribbble
+{
+    background-color: #ea4c89;
+}
+
+.header__icon i:hover
+{
+    border: 1px solid #b06010;
+    color:#b06010;
+    cursor: pointer;
+    background-color: white;
+}
+
+
+
+
+
+
+/* CONTENT */
+.header__content
+{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+/* CONTENT logo*/
+.header__logo
+{
+    text-align: center;
+    line-height: 0.7rem;
+}
+.header__logo a
+{
+    color:black;
+    text-decoration: none;
+}
+
+.header__logo .fa
+{
+    color: #204b87;
+    font-size: 1.5rem;
+}
+
+.header__logo span:first-child
+{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    padding-right: 5px;
+    
+}
+
+.header__logo span:nth-of-type(2)
+{
+    color: #b06010;
+    letter-spacing: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+/* NAV */
+.header__nav > ul
+{
+  
+    padding-top: 5px;
+}
+.header__nav > ul > li
+{
+    display: inline;
+}
+.header__nav > ul > li a
+{
+    color: black;
+    padding: 15px;
+    font-weight: 600;
+}
+
+.header__nav > ul > li a.active
+{
+    color: #b06010
+}
+.header__nav > ul > li a:hover
+{ 
+    text-decoration: none;
+    color: #b06010;
+}
+
+.header__nav .dropdown .dropdown-content
+{
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    right: 20px;
+    background-color: white;
+    color: red;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content li
+{
+    padding: 5px;
+    margin: 0;
+    transition: 0.5s;
+}
+.dropdown-content > a
+{
+    transition: 0.5s;
+    display: block;
+}
+.dropdown-content li:hover
+{
+    text-decoration: none;
+    background-color: #204b87;
+}
+
+.dropdown-content li:hover a
+{
+    color: black;
+    text-decoration: none;
+}
+
+
+.header__nav > ul .dropbtn:hover
+{
+    cursor: pointer;
+    color:black ;
+} 
+
+.header__nav > ul .dropdown:hover .dropdown-content
+{
+    display: block;
+} 
+
+
+/* CAROUSEL */
+.carousel__frame 
+{
+    width: 100%;
+    background-image: url(../img/banner.jpg);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+}
+
+/* ABOUT */
+.gallery
+{
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+}
+.gallery__us h1
+{
+    color:#262c38;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+.gallery__us p
+{
+    color:#b06010;
+    letter-spacing: 6px;
+    margin-bottom: 1em;
+}
+
+.gallery__frame
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px
+}
+.gallery__frame img
+{
+    width: 100%;
+}
+.gallery__item 
+{
+    position: relative;
+}
+
+.gallery__content
+{
+    position: absolute;
+    width: 70%;
+    margin: auto;
+    background: #b06010;
+    z-index: 1;
+    top:30%;
+    left: 15%;
+    padding: 10px 0;
+    transform: rotateY(180deg);
+    transition: 0.8s;
+    opacity: 0;
+}
+.gallery__item:hover
+{
+    cursor: pointer;
+}
+.gallery__item:hover .gallery__content
+{
+    opacity: 1;
+    transform: rotateY(0);
+    cursor: pointer;
+}
+
+.gallery__content h1
+{
+   
+     padding-bottom: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.gallery__content p
+{
+     color: white  ;
+}
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer__frame
+{
+    background-color: #000;
+}
+.footer__content
+{
+
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 100px;
+}
+
+.footer__content h1
+{
+    padding-bottom: 40px;
+    color:white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.foorter__item
+{
+    color:#999;
+   font-size: 0.9rem;
+}
+
+.foorter__item .fa
+{
+    padding-right: 20px;
+    font-size: 1.5rem;
+}
+.foorter__left a
+{
+    text-decoration: none;
+    color: #999;
+    transition: 0.5s;
+}
+
+.foorter__left a:hover
+{
+    color: white;
+}
+
+.foorter__center
+{
+    width: 35%;
+}
+.foorter__center a
+{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color:white;
+    line-height: 30px;
+    margin-right: 20px;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+
+
+.foorter__center a:first-of-type
+{
+    background-color:#3b5998;
+}
+.foorter__center a:nth-of-type(2)
+{
+    background-color:#1da1f2;
+}
+.foorter__center a:last-of-type
+{
+    background-color:#ea4c89;
+}
+
+.foorter__center a:hover
+{
+    border: 1px solid #b06010;
+    color:#b06010;
+    background-color: black;
+}
+
+.foorter__center a i
+{
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.foorter__right .fa
+{
+    color:#204b87;
+    font-size: 0.9rem;
+}
+.foorter__right p:hover
+{
+    color:#204b87;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.footer__form
+{
+    color: white;
+    padding: 50px 0 100px;
+}
+
+.footer__form h1
+{
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+    word-spacing: 5px;
+}
+.footer__form input
+{
+    
+    width: 70%;
+    padding: 10px 5px;
+    background: rgb(27, 27, 27);
+    border:none;
+    outline: none;
+}
+.footer__form button
+{
+    
+    width: 20%;
+    margin-left:10px;
+    padding: 10px 5px;
+    background: #204b87;
+    border:none;
+    outline: none;
+    color: white;
+    transition: 0.5s;
+}
+
+.footer__form button:hover
+{
+    background: #ff9800;
+  
+}
+.footer__footer
+{
+    background: #111;
+    text-align: center;
+    margin-bottom:50px;
+    color:white;
+}
+
+.footer__footer p
+{
+  padding: 15px;
+}
+
+.footer__footer a
+{
+    text-decoration: none;
+    color: #b06010;
+  
+}
+
+.footer__footer a:hover
+{
+    color: white;
+}
+
+/* backToTop */
+
+body > a .fa
+{
+    position: fixed;
+    font-size: 3rem;
+    z-index: 999;
+    transition: 0.5s;
+    color: #ff9800;
+    bottom: 30px;
+    right: 30px;
+}
+
+body > a .fa:hover
+{
+    cursor: pointer;
+    color: #b06010;
+}
