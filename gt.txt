@@ -1,0 +1,19 @@
+
+----------- tạo git-----
+
+--- vào git create repository
+
+--- tiếp theo  vào git base
+
+git init 
+
+git add .
+
+git commit -m"first update"
+
+git remote add origin https://github.com/nguyenngockha2904/TestGit.git
+
+git push -u origin master
+
+------- update file -----
+
